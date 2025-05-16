@@ -3,6 +3,12 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("com.google.gms.google-services")
 }
+//plugins {
+//    id("com.android.application") version "8.3.0" apply false
+//    id("org.jetbrains.kotlin.android") version "1.9.23" apply false
+//    id("com.google.gms.google-services") version "4.4.1" apply false
+//}
+
 
 android {
     namespace = "com.example.silentwhisper"
@@ -61,4 +67,5 @@ dependencies {
     implementation ("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
     implementation ("com.github.lisawray.groupie:groupie:2.10.1")
     implementation ("com.github.lisawray.groupie:groupie-databinding:2.10.1")
+    implementation ("com.squareup.picasso:picasso:2.71828")
 }

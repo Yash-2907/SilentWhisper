@@ -64,6 +64,21 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+        <service
+            android:name=".Notifications.MyFirebaseMessaging"
+            android:exported="false"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Notifications.MyFirebaseInstanceId"
+            android:exported="true"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
 
         <meta-data
             android:name="preloaded_fonts"
